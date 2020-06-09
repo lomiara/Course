@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="anchorPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" onKeyReleased="#keyReleased" onKeyTyped="#keyTyped" prefHeight="524.0" prefWidth="1186.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TypingPractice.Controller">
+   <children>
+      <Pane layoutX="1.0" layoutY="309.0" prefHeight="275.0" prefWidth="1186.0" style="-fx-background-color: #bfb8bf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="DIGIT1" layoutX="60.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   !&#10;    1" />
+            <Label fx:id="DIGIT2" layoutX="111.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   @&#10;    2" />
+            <Label fx:id="DIGIT3" layoutX="161.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   #&#10;    3" />
+            <Label fx:id="DIGIT4" layoutX="212.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="  $&#10;   4" />
+            <Label fx:id="DIGIT5" layoutX="262.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   %&#10;    5" />
+            <Label fx:id="DIGIT6" layoutX="313.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   ^&#10;    6" />
+            <Label fx:id="DIGIT7" layoutX="363.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   &amp;&#10;    7" />
+            <Label fx:id="DIGIT8" layoutX="414.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   *&#10;    8">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="DIGIT9" layoutX="464.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   (&#10;    9" />
+            <Label fx:id="DIGIT0" layoutX="515.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   )&#10;    0" />
+            <Label fx:id="MINUS" layoutX="565.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   _&#10;    -" />
+            <Label fx:id="EQUALS" layoutX="616.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   +&#10;    =">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="BACK_QUOTE" layoutX="8.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   ~&#10;    `" />
+            <Label fx:id="Q" layoutX="82.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   Q" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="W" layoutX="133.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   W" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="E" layoutX="183.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   E" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="R" layoutX="234.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   R" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="T" layoutX="287.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   T" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Y" layoutX="338.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   Y" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="U" layoutX="388.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   U" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="I" layoutX="439.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   I" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="BACK_SPACE" alignment="CENTER" layoutX="668.0" layoutY="21.0" prefHeight="43.0" prefWidth="91.0" style="-fx-background-color: #ccccff;" text="Backspace">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="O" layoutX="489.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   O" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="P" layoutX="540.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   P" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="OPEN_BRACKET" layoutX="590.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   {" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="CLOSE_BRACKET" layoutX="641.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   }" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="BACK_SLASH" layoutX="692.0" layoutY="71.0" prefHeight="43.0" prefWidth="67.0" style="-fx-background-color: #cc6699;" text="  \" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="TAB" alignment="CENTER" layoutX="8.0" layoutY="71.0" prefHeight="43.0" prefWidth="67.0" style="-fx-background-color: #ccccff;" text="Tab" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="A" layoutX="98.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   A" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="S" layoutX="149.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   S" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="D" layoutX="199.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   D" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="F" layoutX="250.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   F" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="G" layoutX="303.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   G" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="H" layoutX="354.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   H" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="J" layoutX="404.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   J" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="K" layoutX="455.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   K" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="L" layoutX="505.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   L" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="SEMICOLON" layoutX="556.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   ;" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="QUOTE" layoutX="606.0" layoutY="120.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   &quot;" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Z" layoutX="125.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   Z" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="X" layoutX="176.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   X" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="C" layoutX="226.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   C" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="V" layoutX="277.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   V" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="B" layoutX="330.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   B" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="N" layoutX="381.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   N" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="M" layoutX="431.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   M" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="COMMA" layoutX="482.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   &lt;" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="PERIOD" layoutX="532.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   &gt;" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="SLASH" layoutX="583.0" layoutY="169.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   ?" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="CAPS" alignment="CENTER" layoutX="8.0" layoutY="120.0" prefHeight="43.0" prefWidth="83.0" style="-fx-background-color: #ccccff;" text="Caps lock" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="SHIFT" alignment="CENTER" layoutX="8.0" layoutY="169.0" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #ccccff;" text="Shift" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ENTER" alignment="CENTER" layoutX="658.0" layoutY="120.0" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: #ccccff;" text="Enter" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="SHIFT1" alignment="CENTER" layoutX="638.0" layoutY="169.0" prefHeight="43.0" prefWidth="121.0" style="-fx-background-color: #ccccff;" text="Shift" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="CONTROL" alignment="CENTER" layoutX="8.0" layoutY="219.0" prefHeight="43.0" prefWidth="67.0" style="-fx-background-color: #ccccff;" text="Ctrl" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ALT" alignment="CENTER" layoutX="82.0" layoutY="219.0" prefHeight="43.0" prefWidth="67.0" style="-fx-background-color: #ccccff;" text="Alt" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ALT_GRAPH" alignment="CENTER" layoutX="617.0" layoutY="219.0" prefHeight="43.0" prefWidth="67.0" style="-fx-background-color: #ccccff;" text="Alt" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="CONTROL1" alignment="CENTER" layoutX="692.0" layoutY="219.0" prefHeight="43.0" prefWidth="67.0" style="-fx-background-color: #ccccff;" text="Ctrl" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="SPACE" layoutX="157.0" layoutY="219.0" prefHeight="43.0" prefWidth="453.0" style="-fx-background-color: #cc6699;" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="INSERT" layoutX="795.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="Ins" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="HOME" layoutX="846.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="Home" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="PAGE_UP" layoutX="896.0" layoutY="21.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="PgUp" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="DELETE" layoutX="796.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="Del" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="END" layoutX="847.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="End" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="PAGE_DOWN" layoutX="897.0" layoutY="71.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="PgDn" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUM_LOCK" layoutX="977.0" layoutY="24.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="Num" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="DIVIDE" layoutX="1028.0" layoutY="24.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="/" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="MULTIPLY" layoutX="1078.0" layoutY="24.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="*" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD7" layoutX="978.0" layoutY="74.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="7" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD8" layoutX="1029.0" layoutY="74.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="8" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD9" layoutX="1079.0" layoutY="74.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="9" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD4" layoutX="977.0" layoutY="122.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="4" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD5" layoutX="1028.0" layoutY="123.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="5" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD6" layoutX="1078.0" layoutY="123.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="6" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD1" layoutX="978.0" layoutY="173.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD2" layoutX="1029.0" layoutY="173.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="2" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD3" layoutX="1079.0" layoutY="173.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="3" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="UP" layoutX="847.0" layoutY="172.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   ↑" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="LEFT" layoutX="797.0" layoutY="222.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="←" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="DOWN" layoutX="848.0" layoutY="222.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="   ↓" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="RIGHT" layoutX="898.0" layoutY="222.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="→" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="SUBTRACT" layoutX="1131.0" layoutY="24.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="-" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ADD" layoutX="1131.0" layoutY="74.0" prefHeight="92.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="+" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ENTER1" layoutX="1131.0" layoutY="173.0" prefHeight="92.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="Enter" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1078.0" layoutY="219.0" prefHeight="43.0" prefWidth="44.0" style="-fx-background-color: #cc6699;" text="." textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="NUMPAD0" layoutX="977.0" layoutY="219.0" prefHeight="43.0" prefWidth="96.0" style="-fx-background-color: #cc6699;" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="26.0" prefHeight="22.0" prefWidth="44.0" text="Time">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Line endX="797.7999877929688" layoutX="115.0" layoutY="70.0" startX="-100.0" />
+      <Label layoutX="242.0" layoutY="26.0" prefHeight="22.0" prefWidth="44.0" text="Errors">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="26.0" prefHeight="22.0" prefWidth="44.0" text="Score">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="Speed" layoutX="180.0" layoutY="9.0" prefHeight="37.0" prefWidth="44.0" text="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Errors" layoutX="381.0" layoutY="7.0" prefHeight="37.0" prefWidth="44.0" text="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Score" layoutX="587.0" layoutY="7.0" prefHeight="37.0" prefWidth="44.0" text="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="806.0" layoutY="-67.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="0.0" text="Button" />
+      <TextFlow fx:id="mTextFlow" layoutX="164.0" layoutY="91.0" prefHeight="122.0" prefWidth="622.0" />
+      <Button fx:id="BtnStart" layoutX="653.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnStartPressed" prefHeight="26.0" prefWidth="61.0" text="Start" />
+      <Button fx:id="BtnStop" layoutX="734.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnStopPressed" prefHeight="26.0" prefWidth="62.0" text="Stop" />
+      <Button fx:id="BtnLogin" layoutX="818.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnLoginPressed" prefHeight="26.0" prefWidth="62.0" text="Login" />
+   </children>
+</AnchorPane>

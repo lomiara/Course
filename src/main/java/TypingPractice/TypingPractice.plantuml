@@ -1,0 +1,298 @@
+@startuml
+
+title __TYPINGPRACTICE's Class Diagram__\n
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.CareTaker {
+          + size : int
+          - history : List<Memento>
+          + add()
+          + get()
+          + remove()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.Controller {
+          ~ BtnStart : Button
+          ~ BtnStop : Button
+          ~ Score : Label
+          ~ Speed : Label
+          ~ anchorPane : AnchorPane
+          ~ id : int
+          ~ length : int
+          ~ mTextFlow : TextFlow
+          ~ rText : Text
+          ~ red : Background
+          ~ s : String
+          ~ scene : Scene
+          ~ time : int
+          ~ timer : Timer
+          ~ violet : Background
+          + Controller()
+          + initialize()
+          + setScene()
+          - btnLoginPressed()
+          - btnStartPressed()
+          - btnStopPressed()
+          - keyPressed()
+          - keyReleased()
+          - keyTyped()
+          - showText()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      interface TypingPractice.DataBase {
+          {abstract} + delete()
+          {static} + getInstance()
+          {abstract} + getid()
+          {abstract} + newUser()
+          {abstract} + save()
+          {abstract} + select()
+          {abstract} + update()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.DatabaseConnection {
+          ~ delete : String
+          ~ deleteD : String
+          ~ id : int
+          ~ insert : String
+          ~ insertD : String
+          ~ resetIdentity : String
+          ~ resetIdentityD : String
+          ~ select : String
+          ~ selectD : String
+          ~ statement : Statement
+          ~ update : String
+          ~ updateL : String
+          - dbconnect : Connection
+          {static} - instance : DatabaseConnection
+          + delete()
+          {static} + getInstance()
+          + getid()
+          + newUser()
+          + save()
+          + select()
+          + update()
+          - DatabaseConnection()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.DatabaseConnectionProxy {
+          {static} ~ db : DatabaseConnection
+          ~ file : File
+          {static} ~ log : String
+          + delete()
+          + getid()
+          {static} + log()
+          + newUser()
+          + save()
+          + select()
+          + update()
+          {static} ~ getInstance()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.Helper {
+          ~ ended : boolean
+          ~ startTime : long
+          ~ targetTime : long
+          ~ time : Label
+          + Helper()
+          + currentTime()
+          + isEnded()
+          + run()
+          + setStartTime()
+          + setTargetTime()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.Login {
+          + id : int
+          + length : int
+          + time : int
+          ~ LoginField : TextField
+          ~ PasswordField : PasswordField
+          ~ pair : Pair<Integer, Integer>
+          - LoginAction()
+          - NewUser()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.Main {
+          {static} + main()
+          + start()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.Model {
+          + btn : Button
+          + btnS : Button
+          + length : int
+          + level : int
+          + nextword : boolean
+          + time : int
+          - Errors : int
+          - Score : int
+          - Speed : int
+          - count : int
+          - currentChar : int
+          - observers : List<Observer>
+          - text : String
+          + key()
+          + notifyObservers()
+          + registerObserver()
+          + removeObserver()
+          + restore()
+          + save()
+          + setText()
+          ~ Model()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.Model.Memento {
+          - Errors : int
+          - Score : int
+          - Speed : int
+          - Text : String
+          - currentChar : int
+          - length : int
+          - level : int
+          - time : int
+          + Memento()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      interface TypingPractice.Observable {
+          {abstract} + notifyObservers()
+          {abstract} + registerObserver()
+          {abstract} + removeObserver()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      interface TypingPractice.Observer {
+          {abstract} + update()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.TextProvider {
+          - length : int
+          - lorem : Lorem
+          - mTextField : TextField
+          - type : String
+          + provideText()
+          - TextProvider()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.TextProvider.Builder {
+          - length : int
+          - lorem : Lorem
+          - mTextField : TextField
+          - type : String
+          + Builder()
+          + TextField()
+          + build()
+          + length()
+          + lorem()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ypingPractice {
+      class TypingPractice.View {
+          ~ Errors : Label
+          ~ Score : Label
+          ~ Speed : Label
+          ~ mTextFlow : TextFlow
+          ~ scene : Scene
+          ~ time : Long
+          + View()
+          + setBck()
+          + update()
+      }
+    }
+  }
+  
+
+  TypingPractice.Controller o-- TypingPractice.CareTaker : careTaker
+  TypingPractice.Controller o-- TypingPractice.DataBase : db
+  TypingPractice.Controller o-- TypingPractice.Login : loginController
+  TypingPractice.Controller o-- TypingPractice.Model : model
+  TypingPractice.Controller o-- TypingPractice.TextProvider : provider
+  TypingPractice.Controller o-- TypingPractice.Helper : task
+  TypingPractice.Controller o-- TypingPractice.View : view
+  TypingPractice.DatabaseConnection .up.|> TypingPractice.DataBase
+  TypingPractice.DatabaseConnectionProxy .up.|> TypingPractice.DataBase
+  TypingPractice.Helper -up-|> java.util.TimerTask
+  TypingPractice.Login o-- TypingPractice.DataBase : db
+  TypingPractice.Main -up-|> javafx.application.Application
+  TypingPractice.Model .up.|> TypingPractice.Observable
+  TypingPractice.Model +-down- TypingPractice.Model.Memento
+  TypingPractice.TextProvider +-down- TypingPractice.TextProvider.Builder
+  TypingPractice.View .up.|> TypingPractice.Observer
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
